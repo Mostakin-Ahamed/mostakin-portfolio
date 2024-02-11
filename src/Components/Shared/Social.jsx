@@ -1,5 +1,5 @@
-import { FaGithub, FaTwitter } from "react-icons/fa";
-import { SiUpwork } from "react-icons/si";
+import { FaGithub, } from "react-icons/fa";
+
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
@@ -7,16 +7,12 @@ const Social = () => {
     const socialIcons = [
         <FaGithub key="github" />,
         <FaLinkedinIn key="linkedin" />,
-        <FaTwitter key="twitter" />,
-        <SiUpwork key="upwork" />,
         <SiGmail key="mail" />,
     ];
 
     const socialAnchors = [
-        'https://github.com/ruksana03',
-        'https://www.linkedin.com/in/atia-ruksana-978015245/',
-        '',
-        '',
+        'https://github.com/Mostakin-Ahamed',
+        'https://www.linkedin.com/in/mostakin-ahamed-1a19a92a3/',
         'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox',
     ];
 

@@ -23,8 +23,8 @@ const Footer = () => {
                     <Social />
                 </div>
                 <div className="font-mono">
-                    <h1 className='flex justify-start items-center gap-2'><MdOutlineMail /> ruksana01official@gmail.com</h1>
-                    <h1 className='flex justify-start items-center gap-2'><FaPhoneAlt /> +880 1795641895</h1>
+                    <h1 className='flex justify-start items-center gap-2'><MdOutlineMail /> mostakinahamedwork@gail.com</h1>
+                    <h1 className='flex justify-start items-center gap-2'><FaPhoneAlt /> +880 1771115639</h1>
                 </div>
 
             </div>
@@ -32,12 +32,10 @@ const Footer = () => {
                 <Link> Contact Me </Link>
                 <Link> hire Me </Link>
                 <Link> Resume </Link>
-                <Link> Resume </Link>
-                <Link> Resume </Link>
 
             </div>
             <div className="flex justify-center items-center">
-                <span className="text-center font-mono">© Ruksana</span>
+                <span className="text-center font-mono">© Mostakin Ahamed</span>
             </div>
 
         </div>
