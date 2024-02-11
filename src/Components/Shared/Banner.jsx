@@ -8,13 +8,13 @@ const Banner = () => {
     };
 
     return (
-        <div className="min-h-screen" style={{
+        <div className="min-h-[70vh] justify-center border" style={{
             backgroundImage: `url('https://i.ibb.co/QjPBymx/a-red-orange-column-of-smoke-in-darkness.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backdropFilter: 'blur(10px)',
         }}>
-            <div className="w-10/12 mx-auto flex justify-between pt-20">
+            <div className="w-10/12 mx-auto mt-28 flex justify-between pt-20 ">
                 <div className="text-white">
                     <h1 className="text-3xl">Hi, I'm Mostakin Ahamed</h1>
                     <p>Junior React Developer</p>
