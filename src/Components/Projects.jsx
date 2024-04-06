@@ -1,3 +1,4 @@
+import { Slide } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -18,30 +19,32 @@ const Projects = () => {
 
                 {
                     projects.map((project, index) => (
-                        <div key={index} className="  px-8 py-6 w-2/3 border">
-                            <div className="max-h-[650px] pl-5 md:pl-12 lg:pl-10 mb-10">
-                                <div className="card w-96 h-full bg-inherit rounded-none shadow-md ">
-                                    <figure className="">
-                                        <img className='border-2 p-2' src={project.image} alt="" />
-                                    </figure>
-                                    <div className="card-body items-start text-center">
+                        <div key={index} className="  px-8 py-6 w-2/3 ">
+                            <Slide direction="left">
+                                <div className="max-h-[650px] pl-5 md:pl-12 lg:pl-10 mb-10">
+                                    <div className="card w-96 h-full bg-inherit rounded-none shadow-md ">
+                                        <figure className="">
+                                            <img className='border-2 p-2' src={project.image} alt="" />
+                                        </figure>
+                                        <div className="card-body items-start text-center">
 
-                                        <h2 className="text-2xl"> {project.proName}</h2>
+                                            <h2 className="text-2xl"> {project.proName}</h2>
 
 
-                                        <div className="w-full gap-4 mb-3">
-                                            <hr className='border border-gray-400' />
-                                        </div>
+                                            <div className="w-full gap-4 mb-3">
+                                                <hr className='border border-gray-400' />
+                                            </div>
 
-                                        <div className="flex w-full  justify-evenly w-Full gap-8">
+                                            <div className="flex w-full  justify-evenly w-Full gap-8">
 
-                                            <Link to={project.liveLink}><button className="btn btn-outline text-white  bg-orange-600">Live Link</button></Link>
-                                            <Link to={project.gitLink}><button className="btn btn-outline  text-white bg-orange-600">GitHub Link</button></Link>
+                                                <Link to={project.liveLink}><button className="btn btn-outline text-white  bg-orange-600">Live Link</button></Link>
+                                                <Link to={project.gitLink}><button className="btn btn-outline  text-white bg-orange-600">GitHub Link</button></Link>
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Slide>
                         </div>
 
                     ))

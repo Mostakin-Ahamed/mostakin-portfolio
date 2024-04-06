@@ -4,6 +4,10 @@ import { Slide } from "react-awesome-reveal";
 import { FaDownload } from "react-icons/fa";
 import { useTypewriter } from "react-simple-typewriter";
 import { FaRegHand } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+
 
 const Banner = () => {
     const handleDownload = () => {
@@ -25,13 +29,13 @@ const Banner = () => {
     return (
 
 
-        <div className='w-full '>
+        <div className='w-full mt-20'>
             <div className='w-9/12 mx-auto flex justify-around gap-4' >
                 <div className="w-full mt-16 ml-10">
                     <Slide direction="right">
                         <div className="pt-20">
                             <h2 className="text-4xl flex gap-2 font-medium font-serif  px-4 h-16 py-4 ">
-                                Hello There <FaRegHand className="animate-bounce" />, I'm  
+                                Hello There <FaRegHand className="animate-bounce" />, I'm
                                 <span className="text-orange-600 font-bold font-sans">{typeEffect1}</span>
                             </h2>
                             <h2 className="text-4xl flex gap-2 font-semibold font-serif  px-4 h-16 py-4 ">
@@ -44,9 +48,19 @@ const Banner = () => {
                                 <div>
                                     <button onClick={handleDownload} className='  flex justify-center gap-3 text-center text-white pt-3 w-[257px] absolute h-[50px] bg-[#FE7E41] mt-9 font-semibold text-base  spacing-5'>Download Resume <FaDownload className="mt-1" /></button>
                                     <button className=' static w-[257px] h-[50px] border-solid border-2 mt-12 ml-5 border-black'></button>
+
+
                                 </div>
-                                <div>
+                                <div >
                                     <img src="/Union.svg" className=' ml-[315px] lg:ml-72 h-[150px]  -mt-7 mb-7' alt="" />
+                                </div>
+                                <div className=" w-8/12 ">
+                                    <p className="font-semibold font-serif underline text-3xl"> <span className="text-orange-600">Connect </span>With Me </p>
+                                    <div className="flex justify-around mt-5">
+                                        <a href="https://www.linkedin.com/in/mostakinahamed/"><button className="  h-12 w-12"><FaLinkedin className="h-full w-full"></FaLinkedin></button></a>
+                                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><button className=" h-12 w-12"><SiGmail className="h-full w-full"></SiGmail></button></a>
+                                        <a href="https://github.com/Mostakin-Ahamed"><button className=" h-12 w-12"><FaGithub className="h-full w-full"></FaGithub></button></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +74,7 @@ const Banner = () => {
                             <Slide direction="right"><img className='lg:h-[580px] lg:w-[750px] object-contain mb-20' src="https://i.ibb.co/d4Msg6M/banner1.png" alt="" /></Slide>
                             <img className='lg:h-[500px] absolute ml-44 -mt-64 lg:ml-9 lg:-mt-[610px]' src="https://i.ibb.co/LpLDC1D/banner-Image.png" alt="" />
                             <Slide direction="left"><img className='h-[150px] absolute ml-44 -mt-64 lg:ml-32 lg:-mt-[260px]' src="https://i.ibb.co/hYbqnfd/bgImage.png" alt="" /></Slide>
-                            
+
                         </div>
                     </Slide>
 
