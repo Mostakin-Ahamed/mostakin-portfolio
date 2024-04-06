@@ -1,39 +1,54 @@
+import { Link } from "react-router-dom";
+
 const Projects = () => {
     const projects = [
-        { image: 'https://i.ibb.co/cyPQ58t/423062957-294784653618434-4609855429672320179-n.png', proName: 'Travel-mania', liveLink: 'https://tool-mania-client.web.app/?fbclid=IwAR0M-jhk7LU0hLcjrULMWULN2RKKeOF4gtachShdv8Pr14qms-cU_Tu5u_k', gitLink: 'https://github.com/Mostakin-Ahamed/Travel-mania?fbclid=IwAR3UmSrC18-XsWEhW7vrqlGQnyDq6s_QNc61lcHypMJzInuM2gR5Dq3PWm0' },
-
+        { image: 'https://i.ibb.co/D81FSnL/Screenshot-2024-04-06-220501.png', proName: 'Travel-mania', liveLink: 'https://65f7bbbccac913076b52f6d8--gorgeous-sprinkles-d96c4e.netlify.app/', gitLink: 'https://github.com/Mostakin-Ahamed/Travel-mania?fbclid=IwAR3UmSrC18-XsWEhW7vrqlGQnyDq6s_QNc61lcHypMJzInuM2gR5Dq3PWm0' },
 
         { image: 'https://i.ibb.co/K2F9mR4/423454228-415014460890257-4724931930947896875-n.png', proName: 'ToolShare', liveLink: 'https://tool-sharing-service.web.app/?fbclid=IwAR3x1e2Dsz2owq12XZltAmTy29AzDnqQIBeb8Xq3j4VA-jh-w4xvDlDKT5M', gitLink: 'https://github.com/Mostakin-Ahamed/ToolShare-Service?fbclid=IwAR3CEe0l59rwyPN3K9adHyXOldQqDNBNO7bHBd4hWqiPGw0xTGKvufbVBOw' },
 
-        { image: 'https://i.ibb.co/zHB9QKR/422216835-7162120293884864-6510097896618641593-n.png', proName: 'BrandShop', liveLink: 'https://automobile-shop-dcd10.web.app/?fbclid=IwAR2tdApCUOGCmRN4I07nF-FRCVWmsWKxTlbxqmfGouPwSjZADsiMTI5kAN0', gitLink: 'https://github.com/Mostakin-Ahamed/BrandShop-client?fbclid=IwAR2blzo-Y53hvrOKPqBfOYzI0QQ4jkzP9zRZVGLNatXQ-yulQyR_URhCJhs' },
+        { image: 'https://i.ibb.co/HXg12qT/Screenshot-2024-04-06-221514.png', proName: 'Boro Bazar', liveLink: 'https://borobazar-4d7fc.web.app/', gitLink: 'https://github.com/Mostakin-Ahamed/BoroBazar' },
     ];
     return (
         <>
-         <h1 className="my-12 text-center text-4xl font-extrabold">My Project</h1>
-            <div className="w-10/12 mx-auto flex gap-4 my-12">
+            <div className=" w-9/12 mx-auto mt-14 text-center mb-16 ">
+                <p className="font-semibold font-serif underline text-5xl">A Few Of My <span className="text-orange-600">Projects</span> </p>
+
+            </div>
+            <div className=" flex justify-evenly w-9/12 mx-auto ">
 
                 {
                     projects.map((project, index) => (
-                        <div key={index} className="shadow-md shadow-white mx-auto px-8 py-6 w-2/3 border">
-                            <img className='border-2 p-2' src={project.image} alt="" />
-                            <hr className='my-2 border border-[#0F2842]' />
-                            <p>Project Name: {project.proName}</p>
-                            <hr className='my-2 border border-[#0F2842]' />
-                            <div className="flex justify-between my-4">
-                                <a href={project.gitLink}>
-                                    <button className="shadow-black shadow-lg px-2 py-2 rounded-md">
-                                        View Details
-                                    </button>
-                                </a>
-                                <a href={project.liveLink}>
-                                    <button className="shadow-black shadow-lg px-2 py-2 rounded-md">
-                                        Live Link
-                                    </button>
-                                </a>
+                        <div key={index} className="  px-8 py-6 w-2/3 border">
+                            <div className="max-h-[650px] pl-5 md:pl-12 lg:pl-10 mb-10">
+                                <div className="card w-96 h-full bg-inherit rounded-none shadow-md ">
+                                    <figure className="">
+                                        <img className='border-2 p-2' src={project.image} alt="" />
+                                    </figure>
+                                    <div className="card-body items-start text-center">
+
+                                        <h2 className="text-2xl"> {project.proName}</h2>
+
+
+                                        <div className="w-full gap-4 mb-3">
+                                            <hr className='border border-gray-400' />
+                                        </div>
+
+                                        <div className="flex w-full  justify-evenly w-Full gap-8">
+
+                                            <Link to={project.liveLink}><button className="btn btn-outline text-white  bg-orange-600">Live Link</button></Link>
+                                            <Link to={project.gitLink}><button className="btn btn-outline  text-white bg-orange-600">GitHub Link</button></Link>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     ))
                 }
+            </div>
+            <div className="w-9/12 mx-auto  gap-4 mt-20 mb-3">
+                <hr className='border border-gray-400' />
             </div>
         </>
 
