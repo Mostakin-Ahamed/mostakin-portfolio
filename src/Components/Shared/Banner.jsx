@@ -71,8 +71,8 @@ const Banner = () => {
 
                     <Slide direction="left">
                         <div className='pr-10 lg:mr-44 ml-11' >
-                            <Slide direction="right"><img className='lg:h-[580px] lg:w-[750px] object-contain mb-20' src="https://i.ibb.co/d4Msg6M/banner1.png" alt="" /></Slide>
-                            <img className='lg:h-[500px] absolute ml-44 -mt-64 lg:ml-9 lg:-mt-[610px]' src="https://i.ibb.co/LpLDC1D/banner-Image.png" alt="" />
+                            <Slide direction="right"><img className='lg:h-[600px] lg:w-[750px] object-contain mb-20' src="https://i.ibb.co/d4Msg6M/banner1.png" alt="" /></Slide>
+                            <img className='lg:h-[445px] absolute -mt-64 lg:ml-1 lg:-mt-[610px]' src="https://i.ibb.co/LpLDC1D/banner-Image.png" alt="" />
                             <Slide direction="left"><img className='h-[150px] absolute ml-44 -mt-64 lg:ml-32 lg:-mt-[260px]' src="https://i.ibb.co/hYbqnfd/bgImage.png" alt="" /></Slide>
 
                         </div>

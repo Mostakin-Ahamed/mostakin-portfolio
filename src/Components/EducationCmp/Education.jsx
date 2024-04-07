@@ -13,7 +13,7 @@ const Education = () => {
             company_name: "Bangladesh University of Business and Technology - BUBT",
             icon: 'https://i.ibb.co/Yh3hbFw/bubt2.jpg',
             iconBg: "#b7e4c7",
-            date: "Jan 2018 - July 2022",
+            date: "Feb 2018 - July 2023",
             visit: "https://www.bubt.edu.bd/home"
 
         },
