@@ -10,21 +10,20 @@ const Projects = () => {
         { image: 'https://i.ibb.co/HXg12qT/Screenshot-2024-04-06-221514.png', proName: 'Boro Bazar', liveLink: 'https://borobazar-4d7fc.web.app/', gitLink: 'https://github.com/Mostakin-Ahamed/BoroBazar' },
     ];
     return (
-        <>
-            <div className=" w-9/12 mx-auto mt-14 text-center mb-16 ">
+        <div >
+            <div className=" lg:w-9/12 w-11/12 mx-auto mt-14 text-center mb-16 ">
                 <p className="font-semibold font-serif underline text-5xl">A Few Of My <span className="text-orange-600">Projects</span> </p>
 
             </div>
-            <div className=" flex justify-evenly w-9/12 mx-auto ">
-
+            <div className="lg:flex lg:gap-0 w-full justify-evenly lg:w-9/12  mx-auto ">
                 {
                     projects.map((project, index) => (
-                        <div key={index} className="  px-8 py-6 w-2/3 ">
+                        <div key={index} className=" lg:px-8 lg:py-6 py-1 px-0 lg:w-2/3 ">
                             <Slide direction="left">
-                                <div className="max-h-[650px] pl-5 md:pl-12 lg:pl-10 mb-10">
+                                <div className="max-h-[650px]  pl-0 md:pl-12 lg:pl-10 mb-10">
                                     <div className="card w-96 h-full bg-inherit rounded-none shadow-md ">
                                         <figure className="">
-                                            <img className='border-2 p-2' src={project.image} alt="" />
+                                            <img className='border-2' src={project.image} alt="" />
                                         </figure>
                                         <div className="card-body items-start text-center">
 
@@ -50,10 +49,10 @@ const Projects = () => {
                     ))
                 }
             </div>
-            <div className="w-9/12 mx-auto  gap-4 mt-20 mb-3">
+            <div className="lg:w-9/12 w-11/12 mx-auto  gap-4 mt-20 mb-3">
                 <hr className='border border-gray-400' />
             </div>
-        </>
+        </div>
 
     );
 };

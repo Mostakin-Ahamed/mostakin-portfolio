@@ -29,7 +29,7 @@ const Banner = () => {
     return (
 
 
-        <div className='w-full mt-20'>
+        <div className='w-full mt-28 lg:mt-20'>
             <div className='lg:w-9/12 w-10/12 mx-auto lg:flex flex-row-reverse justify-around lg:gap-4' >
                 <div className='flex justify-between w-full '>
                     <Slide direction="left">
@@ -50,7 +50,7 @@ const Banner = () => {
                     <Slide direction="right">
                         <div className="lg:pt-20 pb-5 ">
                             <div className="lg:flex  ">
-                                <h2 className="lg:text-3xl lg:w-5/12 flex gap-1 text-2xl lg:flex  font-medium font-serif  lg:px-3 h-16 py-4 ">
+                                <h2 className="lg:text-3xl lg:w-5/12 flex gap-1 text-2xl lg:flex  font-medium font-serif  lg:px-3 lg:h-16 h-12 py-4 ">
                                     Hello There <FaRegHand className="animate-bounce" />, I'm
                                 </h2>
                                 <h2 className=" lg:w-7/12 pt-3 text-orange-600  text-start lg:px-4 lg:text-4xl text-3xl font-bold font-sans">
@@ -73,8 +73,8 @@ const Banner = () => {
                                 <div className="ml-[180px] lg:ml-[315px] ">
                                     <img src="/Union.svg" className='  lg:h-[150px]  lg:-mt-7 lg:mb-7' alt="" />
                                 </div>
-                                <div className=" lg:w-8/12 ">
-                                    <p className="font-semibold font-serif underline text-3xl lg:text-3xl"> <span className="text-orange-600">Connect </span>With Me </p>
+                                <div className=" lg:w-8/12 w-11/12 ">
+                                    <p className="font-semibold font-serif text-center lg:text-start underline text-3xl lg:text-4xl"> <span className="text-orange-600">Connect </span>With Me </p>
                                     <div className="flex justify-around mt-5">
                                         <a href="https://www.linkedin.com/in/mostakinahamed/"><button className="  h-12 w-12"><FaLinkedin className="h-full w-full"></FaLinkedin></button></a>
                                         <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><button className=" h-12 w-12"><SiGmail className="h-full w-full"></SiGmail></button></a>
@@ -90,7 +90,7 @@ const Banner = () => {
 
 
             </div>
-            <div className="w-9/12 mx-auto  gap-4 mt-5 mb-3">
+            <div className="lg:w-9/12 w-11/12 mx-auto  gap-4 mt-5 mb-3">
                 <hr className='border border-gray-400' />
             </div>
         </div>

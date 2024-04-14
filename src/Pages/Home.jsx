@@ -15,13 +15,13 @@ const Home = () => {
   return (
     <div>
       {/* Navbar start */}
-      <div className="lg:fixed top-0 left-0 w-full z-50">
-        <div className=" w-9/12 h-20 mx-auto navbar bg-base-100">
-          <div className="flex-1">
-            <a href="/" className="btn btn-ghost text-3xl font-serif">Mostakin Ahamed</a>
+      <div className="fixed top-0 left-0 w-full z-50 ">
+        <div className=" lg:w-9/12 w-full lg:h-20 mx-auto navbar bg-base-100">
+          <div className="flex-1 hidden lg:block ">
+            <a href="/" className=" btn btn-ghost text-3xl font-serif">Mostakin Ahamed</a>
           </div>
-          <div className="">
-            <ul className="menu gap-5 menu-horizontal font-semibold font-sans text-xl px-1">
+          <div >
+            <ul className="lg:gap-10 opacity-85 gap-3 menu-horizontal font-semibold font-sans text-xl lg:px-1 px-5">
               <li><button onClick={() => scrollToSection('home')}>Resume</button></li>
               <li><button onClick={() => scrollToSection('skills')}>My Skills</button></li>
               <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
