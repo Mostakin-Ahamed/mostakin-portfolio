@@ -30,32 +30,51 @@ const Banner = () => {
 
 
         <div className='w-full mt-20'>
-            <div className='w-9/12 mx-auto flex justify-around gap-4' >
-                <div className="w-full mt-16 ml-10">
+            <div className='lg:w-9/12 w-10/12 mx-auto lg:flex flex-row-reverse justify-around lg:gap-4' >
+                <div className='flex justify-between w-full '>
+                    <Slide direction="left">
+                        <div className='lg:pr-10 lg:mr-44 lg:ml-11' >
+                            <Slide direction="right">
+                                <img className='lg:h-[600px] h-[400px] w-full lg:w-[750px] object-contain mb-20' src="https://i.ibb.co/d4Msg6M/banner1.png" alt="" />
+                            </Slide>
+                            <img className='lg:h-[445px] h-[300px] object-scale-down  absolute -mt-[403px] lg:ml-1 ml-6 lg:-mt-[610px]' src="https://i.ibb.co/LpLDC1D/banner-Image.png" alt="" />
+                            <Slide direction="left">
+                                <img className='lg:h-[150px] h-[100px] absolute ml-52 -mt-[155px] lg:ml-32 lg:-mt-[260px]' src="https://i.ibb.co/hYbqnfd/bgImage.png" alt="" />
+                            </Slide>
+
+                        </div>
+                    </Slide>
+
+                </div>
+                <div className="w-full lg:mt-16 lg:ml-10 ">
                     <Slide direction="right">
-                        <div className="pt-20">
-                            <h2 className="text-4xl flex gap-2 font-medium font-serif  px-4 h-16 py-4 ">
-                                Hello There <FaRegHand className="animate-bounce" />, I'm
-                                <span className="text-orange-600 font-bold font-sans">{typeEffect1}</span>
-                            </h2>
-                            <h2 className="text-4xl flex gap-2 font-semibold font-serif  px-4 h-16 py-4 ">
-                                <span>{typeEffect2}</span>
-                            </h2>
+                        <div className="lg:pt-20 pb-5 ">
+                            <div className="lg:flex  ">
+                                <h2 className="lg:text-3xl lg:w-5/12 flex gap-1 text-2xl lg:flex  font-medium font-serif  lg:px-3 h-16 py-4 ">
+                                    Hello There <FaRegHand className="animate-bounce" />, I'm
+                                </h2>
+                                <h2 className=" lg:w-7/12 pt-3 text-orange-600  text-start lg:px-4 lg:text-4xl text-3xl font-bold font-sans">
+                                    {typeEffect1}
+                                </h2>
+                            </div>
+                            <div className="lg:my-10">
+                                <h2 className="lg:text-4xl text-3xl flex gap-2 font-semibold font-serif  lg:px-4 h-16 py-4 ">
+                                    <span>{typeEffect2}</span>
+                                </h2>
+                            </div>
                         </div>
 
                         <div className='mt-4'>
-                            <div className="ml-10">
+                            <div className=" lg:ml-10">
                                 <div>
                                     <button onClick={handleDownload} className='  flex justify-center gap-3 text-center text-white pt-3 w-[257px] absolute h-[50px] bg-[#FE7E41] mt-9 font-semibold text-base  spacing-5'>Download Resume <FaDownload className="mt-1" /></button>
                                     <button className=' static w-[257px] h-[50px] border-solid border-2 mt-12 ml-5 border-black'></button>
-
-
                                 </div>
-                                <div >
-                                    <img src="/Union.svg" className=' ml-[315px] lg:ml-72 h-[150px]  -mt-7 mb-7' alt="" />
+                                <div className="ml-[180px] lg:ml-[315px] ">
+                                    <img src="/Union.svg" className='  lg:h-[150px]  lg:-mt-7 lg:mb-7' alt="" />
                                 </div>
-                                <div className=" w-8/12 ">
-                                    <p className="font-semibold font-serif underline text-3xl"> <span className="text-orange-600">Connect </span>With Me </p>
+                                <div className=" lg:w-8/12 ">
+                                    <p className="font-semibold font-serif underline text-3xl lg:text-3xl"> <span className="text-orange-600">Connect </span>With Me </p>
                                     <div className="flex justify-around mt-5">
                                         <a href="https://www.linkedin.com/in/mostakinahamed/"><button className="  h-12 w-12"><FaLinkedin className="h-full w-full"></FaLinkedin></button></a>
                                         <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><button className=" h-12 w-12"><SiGmail className="h-full w-full"></SiGmail></button></a>
@@ -66,19 +85,7 @@ const Banner = () => {
                         </div>
                     </Slide>
                 </div>
-                <div className='lg:flex justify-between  w-full '>
 
-
-                    <Slide direction="left">
-                        <div className='pr-10 lg:mr-44 ml-11' >
-                            <Slide direction="right"><img className='lg:h-[600px] lg:w-[750px] object-contain mb-20' src="https://i.ibb.co/d4Msg6M/banner1.png" alt="" /></Slide>
-                            <img className='lg:h-[445px] absolute -mt-64 lg:ml-1 lg:-mt-[610px]' src="https://i.ibb.co/LpLDC1D/banner-Image.png" alt="" />
-                            <Slide direction="left"><img className='h-[150px] absolute ml-44 -mt-64 lg:ml-32 lg:-mt-[260px]' src="https://i.ibb.co/hYbqnfd/bgImage.png" alt="" /></Slide>
-
-                        </div>
-                    </Slide>
-
-                </div>
 
 
 

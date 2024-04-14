@@ -15,7 +15,7 @@ const Footer = () => {
                         <p>Copyright © 2024 - All right reserved</p>
                     </aside>
                     <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-                        <h1 className='flex justify-start items-center gap-2'><MdOutlineMail /> mostakinahamedwork@gail.com</h1>
+                        <h1 className='flex justify-start items-center gap-2'><MdOutlineMail /> mostakinahamedwork@gmail.com</h1>
                         <h1 className='flex justify-start items-center gap-2'><FaPhoneAlt /> +880 1771115639</h1>
                     </nav>
                 </footer>
