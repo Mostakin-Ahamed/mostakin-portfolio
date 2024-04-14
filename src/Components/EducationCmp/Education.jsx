@@ -54,7 +54,7 @@ const Education = () => {
                     >
                         <h3 className="text-xl font-semibold">{education?.title}</h3>
                         <p className="text-sm">{education?.company_name}</p>
-                        <a href={education?.visit} target='_blank' className='border'><MdArrowOutward className='border-b-2 text-xl border-black hover:text-2xl hover:border-[#FF7216] hover:text-[#FF7216]' />Visit</a>
+                        <a href={education?.visit} target='_blank' className='border flex  justify-start gap-4'><MdArrowOutward className='border-b-2 text-xl border-black hover:text-2xl hover:border-[#FF7216] hover:text-[#FF7216]' />Visit</a>
                     </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>

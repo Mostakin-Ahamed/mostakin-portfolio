@@ -15,10 +15,10 @@ const Projects = () => {
                 <p className="font-semibold font-serif underline text-5xl">A Few Of My <span className="text-orange-600">Projects</span> </p>
 
             </div>
-            <div className="lg:flex lg:gap-0 w-full justify-evenly lg:w-9/12  mx-auto ">
+            <div className="lg:flex gap-3 lg:gap-0 w-full justify-evenly lg:w-9/12  mx-auto ">
                 {
                     projects.map((project, index) => (
-                        <div key={index} className=" lg:px-8 lg:py-6 py-1 px-0 lg:w-2/3 ">
+                        <div key={index} className=" lg:px-8 lg:py-6 py-1 px-0 lg:w-2/3 ml-3 lg:ml-0">
                             <Slide direction="left">
                                 <div className="max-h-[650px]  pl-0 md:pl-12 lg:pl-10 mb-10">
                                     <div className="card w-96 h-full bg-inherit rounded-none shadow-md ">
