@@ -37,9 +37,9 @@ const Banner = () => {
                             <Slide direction="right">
                                 <img className='lg:h-[600px] h-[400px] w-full lg:w-[750px] object-contain mb-20' src="https://i.ibb.co/d4Msg6M/banner1.png" alt="" />
                             </Slide>
-                            <img className='lg:h-[445px] h-[300px] object-scale-down  absolute -mt-[403px] lg:ml-1 ml-6 lg:-mt-[610px]' src="https://i.ibb.co/LpLDC1D/banner-Image.png" alt="" />
+                            <img className='lg:h-[450px] lg:mx-10 rounded-full h-[400px] lg:object-fill  object-fill lg:w-[365px] w-80  absolute -mt-[455px] lg:ml-[58px] ml-[60px] lg:-mt-[600px]' src="https://i.ibb.co/6Yf4q5L/banner.png" alt="" />
                             <Slide direction="left">
-                                <img className='lg:h-[150px] h-[100px] absolute ml-52 -mt-[155px] lg:ml-32 lg:-mt-[260px]' src="https://i.ibb.co/hYbqnfd/bgImage.png" alt="" />
+                                <img className='lg:h-[150px] h-[120px] absolute ml-64 -mt-[155px] lg:ml-60 lg:-mt-[260px]' src="https://i.ibb.co/hYbqnfd/bgImage.png" alt="" />
                             </Slide>
 
                         </div>
