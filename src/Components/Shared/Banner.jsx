@@ -4,9 +4,7 @@ import { Slide } from "react-awesome-reveal";
 import { FaDownload } from "react-icons/fa";
 import { useTypewriter } from "react-simple-typewriter";
 import { FaRegHand } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
+
 
 
 const Banner = () => {
@@ -27,8 +25,6 @@ const Banner = () => {
     });
 
     return (
-
-
         <div className='w-full mt-28 lg:mt-20'>
             <div className='lg:w-9/12 w-10/12 mx-auto lg:flex flex-row-reverse justify-around lg:gap-4' >
                 <div className='flex justify-between w-full '>
@@ -73,14 +69,7 @@ const Banner = () => {
                                 <div className="ml-[180px] lg:ml-[315px] ">
                                     <img src="/Union.svg" className='  lg:h-[150px]  lg:-mt-7 lg:mb-7' alt="" />
                                 </div>
-                                <div className=" lg:w-8/12 w-11/12 ">
-                                    <p className="font-semibold font-serif text-center lg:text-start underline text-3xl lg:text-4xl"> <span className="text-orange-600">Connect </span>With Me </p>
-                                    <div className="flex justify-around mt-5">
-                                        <a href="https://www.linkedin.com/in/mostakinahamed/"><button className="  h-12 w-12"><FaLinkedin className="h-full w-full"></FaLinkedin></button></a>
-                                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><button className=" h-12 w-12"><SiGmail className="h-full w-full"></SiGmail></button></a>
-                                        <a href="https://github.com/Mostakin-Ahamed"><button className=" h-12 w-12"><FaGithub className="h-full w-full"></FaGithub></button></a>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </Slide>

@@ -58,6 +58,9 @@ const Education = () => {
                     </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
+            <div className="lg:w-9/12 w-11/12 mx-auto  gap-4 mt-20 mb-3">
+                <hr className='border border-gray-400' />
+            </div>
         </div>
     );
 };

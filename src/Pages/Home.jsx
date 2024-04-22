@@ -2,6 +2,8 @@ import Banner from "../Components/Shared/Banner";
 import Skill from "../Components/Skill";
 import Projects from "../Components/Projects";
 import Education from "../Components/EducationCmp/Education";
+import Contact from "./Contact";
+import Hire from "../Components/Shared/Hire";
 
 
 
@@ -34,6 +36,7 @@ const Home = () => {
       <div id="home">
         <Banner />
       </div>
+      <Hire></Hire>
       <div id="skills">
         <Skill />
       </div>
@@ -43,6 +46,10 @@ const Home = () => {
       <div id="education">
         <Education />
       </div>
+      <div id="contact">
+        <Contact></Contact>
+      </div>
+
     </div>
   );
 };
